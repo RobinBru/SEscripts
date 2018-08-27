@@ -327,10 +327,10 @@ function removeSlide(number) {
 function slideEdit() {
   $('#slideEditor .slide').html("");
   $('#slideEditor .slide').append(memoryRaw[slideNumb]);
-  $('script[src="select.js"]').remove();
+  $('script[src="https://rawgit.com/RobinBru/SEscripts/master/select.js"]').remove();
   $('.select-selected').remove();
   $('.select-items').remove();
-  $('<script>').attr('src', 'select.js').appendTo('head');
+  $('<script>').attr('src', 'https://rawgit.com/RobinBru/SEscripts/master/select.js').appendTo('head');
   setSelect();
   handleThemeUpdate();
   $('#container').css('transform', 'scale(1)');
