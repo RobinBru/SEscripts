@@ -1,0 +1,163 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+  overflow: hidden;
+  background: #e9e9e9;
+}
+#container{
+  width: 1000vw;
+  position: fixed;
+  transition: left 0.8s, filter 0.2s;
+  left: 0;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+  float: left;
+}
+
+
+.title {
+  height: 150px;
+  width: 100%;
+  line-height: 150px;
+  box-shadow: 0 2px 1px rgba(0,0,0,0.3);
+  z-index: 999;
+  color: white;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+  text-align: center;
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+}
+.body {
+  width: 100vw;
+  height: calc(100vh - 150px);
+  box-sizing: border-box;
+  padding: 30px;
+  position: absolute;
+  top: 150px;
+  background-size: 100% 100%;
+}
+.card {
+  position: relative;
+  float: left;
+  border-radius: 5px;
+  filter: drop-shadow(0 2px 1px rgba(0,0,0,0.3));
+  overflow: hidden;
+  background: white;
+  padding: 30px;
+  box-sizing: border-box;
+}
+p {
+  text-align: justify;
+  max-width: 640px;
+}
+
+iframe {
+  left: 40%;
+  top: 100px;
+  min-width: 1060px;
+  height: 560px;
+  float: left;
+  border: none;
+  overflow: hidden;
+  z-index: 0;
+}
+video {
+  margin: 0;
+}
+
+#slideOne .title {
+  background: #FF5722;
+}
+#slideOne .tableHeader {
+  background-color: #FF5722;
+}
+#slideOne th {
+  background-color:#FF8A65;
+}
+
+
+
+#slideTwo .title {
+  background: #FFC107;
+}
+#slideTwo .tableHeader {
+  background-color: #FFC107;
+}
+#slideTwo th {
+  background-color:#FFD54F;
+}
+
+
+#slideThree .title {
+  background: #4CAF50;
+}
+#slideThree .tableHeader {
+  background-color: #4CAF50;
+}
+#slideThree th {
+  background-color:#81C784;
+}
+
+
+#slideFour .title {
+  background: #03A9F4;
+}
+#slideFour .tableHeader {
+  background-color: #03A9F4;
+}
+#slideFour th {
+  background-color:#4FC3F7;
+}
+
+
+
+
+#loadScreen{
+	background: rgba(0,0,0,0.9);
+	position: fixed;
+  z-index:999;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 500px
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr {
+  height: 35px;
+  font-size: 18px;
+}
+.tableHeader {
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 900;
+  font-size: 20px;
+}
+th {
+  padding: 7px;
+  min-width: 100px;
+  color: white;
+}
+
+.textTitle {
+  font-size: 25px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: bold;
+}
